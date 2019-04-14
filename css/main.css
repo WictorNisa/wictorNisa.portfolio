@@ -1,4 +1,24 @@
 
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to {  opacity: 1;}
+}
+@-o-keyframes fadein {
+  from { opacity: 0; }
+  to {  opacity: 1;}
+}
+@-moz-keyframes fadein {
+  from { opacity: 0;}
+  to { opacity: 1;}
+}
+@keyframes fadein {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+
+
+
 :root{
   --overlay-color: rgba(24, 39, 51, 0.85);
   --menu-speed: 0.75s;
@@ -13,6 +33,7 @@
 body{
   font-family: 'Playfair Display', serif;
   line-height: 1.4;
+  scroll-behavior: smooth;
 }
 
 .container{
@@ -51,7 +72,7 @@ body{
 .showcase h1 {
   font-family: 'Cinzel', serif;
   font-size: 3em;
-  font-weight:
+  padding-bottom: .5em;
 }
 .showcase h2 {
   font-family: 'Cinzel', serif;
@@ -64,10 +85,15 @@ body{
   font-family: 'Cinzel', serif;
 }
 
-.fa-arrow-down{
-  background-color: yellow;
-  display: block;
-  position: fixed;
-  z-index: 3;
-  opacity: 1;
+.test{
+  transition: fadein 1s ease-in;
+}
+
+.hidden{
+  animation: fadein 3s ease-in;
+}
+
+.hidden-span{
+  color: #56667A;
+  animation: fadein 3.4s ease-in;
 }
