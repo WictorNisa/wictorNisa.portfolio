@@ -63,3 +63,11 @@ body{
   padding-top: 1em;
   font-family: 'Cinzel', serif;
 }
+
+.fa-arrow-down{
+  background-color: yellow;
+  display: block;
+  position: fixed;
+  z-index: 3;
+  opacity: 1;
+}
