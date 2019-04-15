@@ -1,23 +1,25 @@
-
+/* ========================BASE STYLES ====================== */
 @-webkit-keyframes fadein {
-  from { opacity: 0; }
+  from { opacity: 0;}
   to {  opacity: 1;}
 }
 @-o-keyframes fadein {
-  from { opacity: 0; }
+  from { opacity: 0;}
   to {  opacity: 1;}
 }
 @-moz-keyframes fadein {
   from { opacity: 0;}
-  to { opacity: 1;}
+  to { opacity: 1; height: 75%;}
 }
 @keyframes fadein {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from { opacity: 0;}
+  to { opacity: 1;}
 }
 
-
-
+@keyframes slidein {
+  from{ width: 0%; opacity: 0;}
+  to{  width: 100%; opacity: 1;}
+};
 
 :root{
   --overlay-color: rgba(24, 39, 51, 0.85);
@@ -35,6 +37,11 @@ body{
   line-height: 1.4;
   scroll-behavior: smooth;
 }
+
+
+/* ========================HEADER====================== */
+
+
 
 .container{
   max-width: 960px;
@@ -85,15 +92,74 @@ body{
   font-family: 'Cinzel', serif;
 }
 
-.test{
-  transition: fadein 1s ease-in;
+.hidden-h1{
+  animation: fadein 1.5s ease-out;
+}
+
+.hidden-h2{
+  animation: fadein 4s ease-in;
 }
 
 .hidden{
-  animation: fadein 3s ease-in;
+  animation: fadein 5s ease-in;
 }
 
 .hidden-span{
-  color: #56667A;
-  animation: fadein 3.4s ease-in;
+  color: #5C697A;
+  animation: fadein 7s ease-in;
+}
+
+.hidden-p{
+  animation: fadein 8s ease-in;
+  animation-delay: .5s;
+}
+
+.fa-angle-double-down{
+  color: #fff;
+  padding-top: 1em;
+  width: 100%;
+  transition: all .7s linear;
+}
+
+.fa-angle-double-down:hover{
+  transform: scale(1.3);
+}
+
+
+
+/* ========================ABOUT====================== */
+
+.about-container {
+  display: grid;
+  grid-template-columns: minmax(300px, 1fr);
+  grid-template-rows: repeat(2, minmax(400px, 1fr));
+}
+
+.bigH{
+  margin-top: 0;
+  text-align: center;
+  padding-bottom: 1em;
+  font-size: 1.3em;
+  font-family: 'Cinzel', serif;
+}
+
+.profile-info{
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.profile-img{
+  -webkit-clip-path: polygon(14% 7%, 100% 0%, 83% 100%, 0% 100%);
+  clip-path: polygon(14% 7%, 100% 0%, 83% 100%, 0% 100%);
+}
+
+.profile-skills{
+  grid-column: 1 / 1;
+  grid-row: 2 / 3;
+  margin: auto;
+  width: 90%;
 }
