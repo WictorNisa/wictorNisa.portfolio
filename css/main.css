@@ -132,13 +132,7 @@ body{
 .about-container {
   display: grid;
   grid-template-columns: minmax(300px, 1fr);
-  grid-template-rows: repeat(2, minmax(300px, 500px));
-}
-
-.project-container {
-  display: grid;
-  grid-template-columns: minmax(300px, 1fr);
-  grid-template-rows: repeat(2, minmax(300px, 1fr));
+  grid-template-rows: repeat(3, minmax(300px, 500px));
 }
 
 .bigH{
@@ -166,7 +160,7 @@ body{
 .profile-skills{
   padding-top: 1em;
   grid-column: 1 / 1;
-  grid-row: 2 / 3;
+  grid-row: 2 / 2;
   margin: auto;
   width: 90%;
 }
@@ -185,16 +179,31 @@ body{
 
 .skill-ul {
   list-style: none;
-  text-decoration: underline;
+
+}
+
+.skill-li-p {
+  text-align: center;
+  font-size: 1.1em;
+  border-bottom: 1px solid black;
+  padding-top: .5em;
+  padding-bottom: .5em;
 }
 
 .skill-li {
   text-align: center;
+  font-size: 1.1em;
+  text-decoration: underline;
+  padding-bottom: .5em;
 }
 
 .about-me p {
   font-weight: lighter;
   line-height: 1.5;
+}
+
+.certifi{
+  grid-row: 3 / 3;
 }
 
 .certifi-img{
@@ -203,7 +212,15 @@ body{
 
 /* =====================PROJECTS===================== */
 
+.project-container {
+  display: grid;
+  grid-template-columns: minmax(300px, 1fr);
+  grid-template-rows: repeat(2, minmax(300px, 1fr));
+}
+
 .project-list{
   grid-column: 1 / 1;
   grid-row: 2 / 2;
+  width: 90%;
+  margin: auto;
 }
