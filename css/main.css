@@ -132,14 +132,20 @@ body{
 .about-container {
   display: grid;
   grid-template-columns: minmax(300px, 1fr);
-  grid-template-rows: repeat(2, minmax(400px, 1fr));
+  grid-template-rows: repeat(2, minmax(300px, 500px));
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: minmax(300px, 1fr);
+  grid-template-rows: repeat(2, minmax(300px, 1fr));
 }
 
 .bigH{
-  margin-top: 0;
+  margin-top: 1em;
   text-align: center;
   padding-bottom: 1em;
-  font-size: 1.3em;
+  font-size: 1.8em;
   font-family: 'Cinzel', serif;
 }
 
@@ -158,8 +164,46 @@ body{
 }
 
 .profile-skills{
+  padding-top: 1em;
   grid-column: 1 / 1;
   grid-row: 2 / 3;
   margin: auto;
   width: 90%;
+}
+
+.skills {
+  margin-top: 2em;
+}
+
+.skills h2 {
+  text-align: center;
+  font-family: 'Cinzel', serif;
+  margin-bottom: 1em;
+  margin-top: 2em;
+}
+
+
+.skill-ul {
+  list-style: none;
+  text-decoration: underline;
+}
+
+.skill-li {
+  text-align: center;
+}
+
+.about-me p {
+  font-weight: lighter;
+  line-height: 1.5;
+}
+
+.certifi-img{
+  width: 100%;
+}
+
+/* =====================PROJECTS===================== */
+
+.project-list{
+  grid-column: 1 / 1;
+  grid-row: 2 / 2;
 }
