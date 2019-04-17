@@ -90,19 +90,6 @@ function openModal(e){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
   var rellax = new Rellax('.rellax', {
     speed: -1.5,
     center: false,

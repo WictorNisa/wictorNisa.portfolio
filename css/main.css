@@ -227,6 +227,7 @@ a {
   grid-row: 2 / 2;
   width: 90%;
   margin: auto;
+  cursor: pointer;
 }
 
 
@@ -278,10 +279,6 @@ a {
   background-color: #283845;
 }
 
-/* .modal-buttons{
-  display: flex;
-  justify-content: space-between;
-} */
 
 .github-button{
   text-align: center;
@@ -303,4 +300,40 @@ a {
   width: 100px;
   padding: 5px 11px 5px 11px;
   background-color: #76B041;
+}
+
+
+/* ========================CONTACT========================== */
+
+.contact-container{
+  display: grid;
+  grid-template-columns: minmax(300px, 1fr);
+  grid-template-rows: repeat(1, minmax(300px, 1fr));
+  background: url('../img/test.jpg') no-repeat center center/cover;
+  margin-top: 5em;
+  opacity: .8;
+}
+
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact-container > * {
+  color: #fff;
+}
+
+.contact-a {
+  color: #fff;
+  margin-top: 1em;
+  text-decoration: underline;
+}
+
+.copy-right {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 1em;
+  margin-bottom: 1em;
 }
