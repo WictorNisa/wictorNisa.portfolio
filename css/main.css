@@ -372,6 +372,10 @@ a {
 
 @media (min-width: 1024px) {
 
+  body{
+    scroll-behavior: smooth;
+  }
+
 .desktop-menu{
   display: block;
   margin-right: 1em;
