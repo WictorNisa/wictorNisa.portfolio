@@ -500,8 +500,8 @@ a {
 }
 
 .close-modal:hover{
-  background-color: #BBB8B2;
-  border: black;
+  background-color: #0F0E0E;
+  border: white;
   color: white;
 }
 
