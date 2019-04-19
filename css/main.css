@@ -396,7 +396,7 @@ a {
   padding-right: 1.7em;
   font-size: 1.2em;
   font-family: 'Cinzel', serif;
-  transition: fadein .85s;
+  transition:  .85s;
 }
 
 .desktop-menu ul li a:hover {
