@@ -213,7 +213,7 @@ a {
 .certifi-img{
   display: block;
   margin: auto;
-  width: 90%;
+  width: 300px;
 }
 
 /* =====================PROJECTS===================== */
@@ -355,7 +355,7 @@ a {
 
   .certifi-img{
     display: block;
-    width: 80%;
+    width: 50%;
     margin: 0 auto;
   }
 
@@ -426,8 +426,8 @@ a {
   background-color: #FAFBFA;
   padding: 0 1em 0 1em;
   margin-right: 3em;
-  width: 700px;
-  height: 250px;
+  width: 535px;
+  height: 350px;
   -webkit-clip-path: polygon(0 5%, 100% 6%, 100% 100%, 3% 92%);
   clip-path: polygon(0 5%, 100% 6%, 100% 100%, 3% 92%);
 }
@@ -454,8 +454,8 @@ a {
 }
 
 .certifi-img{
-  display: block;
-  width: 35%;
+  width: 500px;
+
 }
 
 
