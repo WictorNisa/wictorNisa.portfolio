@@ -186,6 +186,11 @@ a {
 
 .skill-ul {
   list-style: none;
+  text-align: center;
+}
+
+.hidePmobile{
+  display: none;
 }
 
 .skill-ul-project{
@@ -205,6 +210,8 @@ a {
   font-size: 1.1em;
   padding-bottom: .5em;
 }
+
+
 
 .about-me p {
   text-align: center;
@@ -519,6 +526,10 @@ a {
   margin-top: 3em;
   width: 40%;
   margin: auto;
+}
+
+.hidePmobile{
+  display: block;
 }
 
 .project-list > *{
