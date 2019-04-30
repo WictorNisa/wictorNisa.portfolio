@@ -14,7 +14,7 @@ certiModal.addEventListener('click', openModalCerti);
 
 function openModalCerti(e) {
   modal.style.display = 'flex';
-  modal.style.opacity = '.97';
+  modal.style.opacity = '.98';
   let html = `
     <img src="https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/12880007" class="certifi-img">
   `;

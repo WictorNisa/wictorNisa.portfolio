@@ -180,6 +180,9 @@ a {
   margin-top: 2em;
 }
 
+.skills{
+  margin: auto;
+}
 
 .skill-ul {
   list-style: none;
@@ -212,12 +215,25 @@ a {
 
 .certifi{
   grid-row: 3 / 3;
+  margin: auto;
+  width: 90%;
 }
 
 .certifi-img{
   display: block;
   margin: auto;
   width: 300px;
+  box-shadow: 0 5px 8px 0 rgba(0, 0 , 0, 0.2), 0 7px 20px 0 rgba(0, 0 , 0 , 0.17);
+}
+
+.frontendCerti{
+  width: 80%;
+  font-size: 1.2em;
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 1px solid black;
+  margin: auto;
+  padding-bottom: .4em;
 }
 
 /* =====================PROJECTS===================== */
@@ -260,7 +276,6 @@ a {
   width: 93%;
   height: 500px;
   display: flex;
-  border-bottom-left-radius: 20%;
   border-bottom: 1px solid #E6E8E6;
   border-left: 1px solid #E6E8E6;
   justify-content: center;
@@ -483,13 +498,7 @@ a {
 }
 
 .frontendCerti{
-  width: 40%;
-  font-size: 1.2em;
-  text-align: center;
-  text-transform: uppercase;
-  border-bottom: 1px solid black;
-  margin: auto;
-  padding-bottom: .4em;
+  width: 30%;
 }
 
 .certifi-img{
@@ -515,6 +524,7 @@ a {
 .project-list > *{
   color: #fff;
 }
+
 
 /* ========================= CONTACT ============================= */
 
