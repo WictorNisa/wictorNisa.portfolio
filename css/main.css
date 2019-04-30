@@ -1,4 +1,5 @@
 /* ========================BASE STYLES ====================== */
+/* ========================KEY FRAMES ================ */
 @-webkit-keyframes fadein {
   from { opacity: 0;}
   to {  opacity: 1;}
@@ -20,6 +21,11 @@
   from{ width: 0%; opacity: 0;}
   to{  width: 100%; opacity: 1;}
 };
+
+@keyframes popupborder {
+  from{ border-bottom: 0; border-top: 0;}
+  to{ border-bottom: 1px solid white; border-top: 1px solid white;}
+}
 
 :root{
   --overlay-color: rgba(24, 39, 51, 0.85);
@@ -384,6 +390,10 @@ a {
   padding-top: 1em;
 }
 
+.hidden-span{
+  color: #2E282A;
+}
+
 .desktop-menu ul {
   display: flex;
   justify-content: flex-end;
@@ -394,6 +404,11 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: 1s;
+}
+
+.desktop-menu ul li:hover {
+  transform: popupborder 1s linear;
 }
 
 .desktop-menu ul li a {
@@ -404,7 +419,8 @@ a {
 }
 
 .desktop-menu ul li a:hover {
-  transform: fadein 1s linear;
+  /* transform: fadein 1s linear; */
+  transform: popupborder 1s linear;
   color: black;
 }
 
