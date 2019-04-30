@@ -326,7 +326,7 @@ a {
   width: 120px;
   height: 30px;
   padding: 5px 11px 5px 11px;
-  background-color: #493657;
+  background-color: #233D4D;
 }
 
 .liveproject-button{
@@ -338,9 +338,12 @@ a {
   width: 120px;
   height: 30px;
   padding: 5px 11px 5px 11px;
-  background-color: #556F44;
+  background-color: #5A716A;
 }
 
+#mobileCertiButton{
+  margin-top: 4em;
+}
 
 /* ========================CONTACT========================== */
 
@@ -564,11 +567,11 @@ a {
 }
 
 .liveproject-button:hover{
-  background-color: #386C0B;
+  background-color: #879792;
 }
 
 .github-button:hover{
-  background-color: #69306D;
+  background-color: #5F717D;
   border: black;
 }
 
