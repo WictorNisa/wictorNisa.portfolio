@@ -17,15 +17,7 @@
   to { opacity: 1;}
 }
 
-@keyframes slidein {
-  from{ width: 0%; opacity: 0;}
-  to{  width: 100%; opacity: 1;}
-};
 
-@keyframes popupborder {
-  from{ border-bottom: 0; border-top: 0;}
-  to{ border-bottom: 1px solid white; border-top: 1px solid white;}
-}
 
 :root{
   --overlay-color: rgba(24, 39, 51, 0.85);
@@ -91,9 +83,11 @@ a {
 
 .showcase h1 {
   font-family: 'Cinzel', serif;
-  font-size: 3em;
+  font-size: 3.4em;
+  font-weight: lighter;
   padding-bottom: .5em;
 }
+
 .showcase h2 {
   font-family: 'Cinzel', serif;
   font-size: 2em;
@@ -189,7 +183,10 @@ a {
 
 .skill-ul {
   list-style: none;
+}
 
+.skill-ul-project{
+  list-style: none;
 }
 
 .skill-li-p {
@@ -210,6 +207,7 @@ a {
   text-align: center;
   font-weight: lighter;
   line-height: 1.5;
+  color: #233D4D;
 }
 
 .certifi{
@@ -382,6 +380,9 @@ a {
 
   body{
     scroll-behavior: smooth;
+    background-image: url('../img/background.jpg');
+    background-position: center;
+    /* background-repeat: no-repeat; */
   }
 
 .desktop-menu{
@@ -391,7 +392,7 @@ a {
 }
 
 .hidden-span{
-  color: #2E282A;
+  color: #1A1423;
 }
 
 .desktop-menu ul {
@@ -404,11 +405,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: 1s;
-}
-
-.desktop-menu ul li:hover {
-  transform: popupborder 1s linear;
+  transition: 1s
 }
 
 .desktop-menu ul li a {
@@ -419,8 +416,7 @@ a {
 }
 
 .desktop-menu ul li a:hover {
-  /* transform: fadein 1s linear; */
-  transform: popupborder 1s linear;
+  transform: fadein 1s ease-out;
   color: black;
 }
 
@@ -439,30 +435,43 @@ a {
   grid-template-columns: repeat(2, minmax(300px, 1fr));
 }
 
+#hide-desktop-h2{
+  display: none;
+}
+
 
 .profile-skills {
   grid-row: 1 / 1;
   grid-column: 2 / 2;
-  background-color: #FAFBFA;
   padding: 0 1em 0 1em;
   margin-right: 3em;
-  width: 535px;
-  height: 350px;
-  -webkit-clip-path: polygon(0 5%, 100% 6%, 100% 100%, 3% 92%);
-  clip-path: polygon(0 5%, 100% 6%, 100% 100%, 3% 92%);
+  width: 90%;
+  line-height: 1.4;
 }
 
 .skills {
-  grid-row: 2 / 2;
+  grid-row: 2 / 3;
   grid-column: 1 / 3;
-  border-bottom: 1px solid black;
-  border-top: 1px solid black;
-  width: 40%;
+  width: 70%;
+  height: 70%;
   margin: auto;
 }
 
-.skill-ul li:nth-last-child(1){
-  padding-bottom: 2em;
+.skill-ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.skill-ul li {
+  margin-top: 3em;
+  font-size: 1.2em;
+  font-weight: lighter;
+  color: #233D4D;
+}
+
+.skill-li:hover{
+
 }
 
 
@@ -478,11 +487,29 @@ a {
 
 }
 
+.skill-ul-project{
+  list-style: none;
+}
+
+.skill-li-p{
+  border-bottom: 1px solid #fff;
+  padding-bottom: 1em;
+}
 
 .project-list{
   margin-top: 3em;
   width: 40%;
   margin: auto;
+}
+
+.project-list > *{
+  color: #fff;
+}
+
+/* ========================= CONTACT ============================= */
+
+.contact-container{
+  background-image: none;
 }
 
 
