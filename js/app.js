@@ -3,11 +3,24 @@ const modalOpenOne = document.querySelector('.project1');
 const modalContent = document.querySelector('.modal-content');
 const closeButton = document.querySelector('.close-modal');
 const sliderElements = document.querySelectorAll('.slide-in');
+const certiModal = document.querySelector('.frontendCerti');
 
 
 window.addEventListener('click', openModal);
 window.addEventListener('click', outsideClick);
 modal.addEventListener('click', closeModal);
+certiModal.addEventListener('click', openModalCerti);
+
+
+function openModalCerti(e) {
+  modal.style.display = 'flex';
+  modal.style.opacity = '.97';
+  let html = `
+    <img src="https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/12880007" class="certifi-img">
+  `;
+  modalContent.innerHTML = html;
+}
+
 
 
 function outsideClick(e) {
